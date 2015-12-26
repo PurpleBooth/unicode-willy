@@ -1,4 +1,4 @@
-// It's a web server that prints a ASCII penis.
+// It's a web server that prints an ASCII penis.
 // Copyright (C) 2015  Billie Thompson <billie@purplebooth.co.uk>
 //
 // This program is free software: you can redistribute it and/or modify it
