@@ -57,8 +57,9 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	log.Println(fmt.Sprintf("Listening on :%d", port))
+	listeningAddress := fmt.Sprintf(":%d", port)
+	log.Println(fmt.Sprintf("Listening on %s", listeningAddress))
 
 	http.HandleFunc("/", handler)
-	http.ListenAndServe(fmt.Sprintf(":%d", port), nil)
+	http.ListenAndServe(listeningAddress, nil)
 }
